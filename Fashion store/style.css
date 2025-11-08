@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #D3D3D3;
+}
+header{
+    background-color: #806BDC;
+    padding-top: 18px;
+    height: 50px;
+    color: #FFFFFF;
+    height: 70px;
+}
+header h1{
+    font-size: 25px;
+    text-align: center;
+}
+.navbar{
+    display: flex;
+    background-color: #FFFFFF;
+    height: 130px;
+    width: 100vw;
+    padding: 20px;
+    justify-content: space-around;
+    font-weight: 550;
+
+
+}
+.navbar div{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 10px;
+font-size: 25px;
+ padding-top: 15px;
+    padding-bottom: 15px;
+}
+.navbar h6{
+    cursor: pointer;
+}
+.navbar h6:hover{
+    color: #806BE3;
+}
+
+.promo{
+   display: flex;
+   justify-content: center;
+   padding: 30px;
+}
+.promo img{
+    width: 90vw;
+    height: 400px;
+}
+.sale{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+table{
+    border-collapse: collapse;
+    width: 80vw;
+    height: 200px;
+    table-layout: fixed;
+}
+table th{
+    padding: 10px;
+    background-color: #806BDC;
+}
+table td{
+    padding-left: 10px;
+}
+.about{
+    background-color: #FFFFFF;
+    padding: 15px;
+    gap: 20px ;
+     color: rgb(135, 135, 135);
+}
+.about h2{
+    padding-bottom: 20px;
+}
+.about p{
+    padding-bottom: 15px;
+    color: rgb(135, 135, 135);
+    font-size: 11px;
+    font-weight: 400;
+}
+.about h6{
+    padding-bottom: 25px;
+}
+.about ul{
+    padding-left: 15px;
+    padding-bottom: 20px;
+        font-size: 11px;
+    font-weight: 400;
+     color: rgb(135, 135, 135);
+}
+.about .payment{
+    padding-bottom: 20px;
+}
+.copyright{
+    height: 70px;
+    padding-top: 28px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
