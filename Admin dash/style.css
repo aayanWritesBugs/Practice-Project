@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #540863;
+    color: #FFD3D5;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-grid">
+
+    <!-- 1. The Header (Uses Flexbox) -->
+    <header class="grid-header">
+        <div class="header-left">
+            <h3>My Dashboard</h3>
+        </div>
+        <div class="header-right">
+            <input type="search" placeholder="Search...">
+            <img src="https://placehold.co/40x40/fff/000?text=A" alt="Avatar" class="avatar">
+        </div>
+    </header>
+
+    <!-- 2. The Sidebar -->
+    <aside class="grid-sidebar">
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Dashboard</a></li>
+                <li><a href="#">Users</a></li>
+                <li><a href="#">Site Settings</a></li>
+                <li><a href="#">Analytics</a></li>
+                <li><a href="#">Log Out</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- 3. The Main Content (Contains the Table and Form) -->
+    <main class="grid-main">
+        
+        <!-- The Table Card -->
+        <div class="card">
+            <h2>Recent Users</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Shewag A.</td>
+                        <td>shewag@example.com</td>
+                        <td>Admin</td>
+                    </tr>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>john@example.com</td>
+                        <td>User</td>
+                    </tr>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>jane@example.com</td>
+                        <td>Editor</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- The Form Card -->
+        <div class="card">
+            <h2>Quick Draft</h2>
+            <form class="quick-draft-form">
+                <label for="title">Title:</label>
+                <input type="text" id="title" placeholder="Post Title">
+                
+                <label for="content">Content:</label>
+                <textarea id="content" rows="5" placeholder="What's on your mind?"></textarea>
+                
+                <button type="submit">Save Draft</button>
+            </form>
+        </div>
+
+    </main>
+
+</body>
+</html>
