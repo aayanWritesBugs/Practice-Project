@@ -1,0 +1,70 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'); */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Elms Sans", sans-serif;
+    font-style: normal;
+    
+}
+body{
+    background-color: #FFFFFF;
+}
+nav{
+    height: 4.5em;
+    position:sticky;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+     border-bottom: 1px solid rgb(224, 219, 219);
+}
+.logo img{
+    height: 1em;
+    
+}
+nav a{
+    padding-left: 3em;
+    text-decoration: none;
+    color: grey;
+    font-weight: 400;
+    font-size: 1em;
+   
+}
+nav a:hover{
+    color: rgb(56, 126, 209);;
+}
+.first{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    gap: 20px;
+}
+.first h2{
+    font-weight: 500;
+    font-size: 2em;
+
+}
+.first h4{
+    font-weight: 400;
+    font-size: 1.2em;
+}
+.first img{
+    height: 20em;
+}
+.first button{
+    background-color: #387ed1;
+    cursor: pointer;
+    color: white;
+    border: none;
+    width: 200px;
+    height: 45px;
+    font-weight: 500;
+    font-size: 1.5em;
+    border-radius: 4px;
+}
+.first button:hover{
+    background-color: #222222;
+    
+}
