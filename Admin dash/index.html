@@ -1,19 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <div class="tittle">
-            <h1>Splunk User Management</h1>
+      <div class="tittle">
+        <h1>Splunk User Management</h1>
+      </div>
+      <div class="rightheader">
+        <input type="search" placeholder="type username" />
+        <button class="search">Search</button>
+        <div class="admin">
+          <img src="asset/1000027189.jpg" alt="" />
+          <div class="adminname">
+            <h6>Admin</h6>
+          </div>
         </div>
-        <div class="rightheader">
-            <input type="search" placeholder="Search users">
-        </div>
+      </div>
     </header>
-</body>
+    <nav><div class="navbar">
+        <a href="Home">Home</a>
+        <a href="User">Users</a>
+        <a href="Admin">Admin</a>
+        <a href="Setting">About</a>
+        </div>
+    </nav>
+    <main>
+        <div class="dash">
+            <div class="table1">
+                <h2>User Details</h2>
+            <table border="1px" class="table1">
+                <thead>
+                    <th>username</th>
+                    <th>Permissions</th>
+                    <th>Last Logged</th>
+                    <th>Remove</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Shewag</td>
+                        <td>User level</td>
+                        <td>15 min ago</td>
+                        <td>
+                            <button>Remove user</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Admin level</td>
+                        <td>2 hours ago</td>
+                        <td>
+                            <button>Remove user</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sarah</td>
+                        <td>User level</td>
+                        <td>1 day ago</td>
+                        <td>
+                            <button>Remove user</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mike</td>
+                        <td>User level</td>
+                        <td>3 days ago</td>
+                        <td>
+                            <button>Remove user</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Lisa</td>
+                        <td>Admin level</td>
+                        <td>1 week ago</td>
+                        <td>
+                            <button>Remove user</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="table2">
+                <h2>Admin Users & Permissions</h2>
+                <table class="admin-table" border="1">
+                    <thead>
+                        <tr>
+                            <th>Admin</th>
+                            <th>Email</th>
+                            <th>Role</th>
+                            <th>Permissions</th>
+                            <th>Active</th>
+                            <th>Controls</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>admin@example.com</td>
+                            <td>Super Admin</td>
+                            <td>
+                                <ul>
+                                    <li><label><input type="checkbox" checked disabled> Manage Users</label></li>
+                                    <li><label><input type="checkbox" checked disabled> Manage Roles</label></li>
+                                    <li><label><input type="checkbox" checked disabled> View Logs</label></li>
+                                    <li><label><input type="checkbox" checked disabled> Edit Settings</label></li>
+                                    <li><label><input type="checkbox" checked disabled> Delete Users</label></li>
+                                </ul>
+                            </td>
+                            <td style="text-align:center"><input type="checkbox" checked disabled></td>
+                            <td>
+                                <button class="edit">Edit</button>
+                                <button class="disable">Disable</button>
+                                <button class="remove">Remove</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>John</td>
+                            <td>john@example.com</td>
+                            <td>Admin</td>
+                            <td>
+                                <ul>
+                                    <li><label><input type="checkbox" checked> Manage Users</label></li>
+                                    <li><label><input type="checkbox"> Manage Roles</label></li>
+                                    <li><label><input type="checkbox" checked> View Logs</label></li>
+                                    <li><label><input type="checkbox"> Edit Settings</label></li>
+                                    <li><label><input type="checkbox"> Delete Users</label></li>
+                                </ul>
+                            </td>
+                            <td style="text-align:center"><input type="checkbox" checked></td>
+                            <td>
+                                <button class="edit">Save</button>
+                                <button class="disable">Disable</button>
+                                <button class="remove">Remove</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Lisa</td>
+                            <td>lisa@example.com</td>
+                            <td>Moderator</td>
+                            <td>
+                                <ul>
+                                    <li><label><input type="checkbox"> Manage Users</label></li>
+                                    <li><label><input type="checkbox"> Manage Roles</label></li>
+                                    <li><label><input type="checkbox" checked> View Logs</label></li>
+                                    <li><label><input type="checkbox"> Edit Settings</label></li>
+                                    <li><label><input type="checkbox"> Delete Users</label></li>
+                                </ul>
+                            </td>
+                            <td style="text-align:center"><input type="checkbox"></td>
+                            <td>
+                                <button class="edit">Save</button>
+                                <button class="enable">Enable</button>
+                                <button class="remove">Remove</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+        </div>
+    </main>
+  </body>
 </html>
