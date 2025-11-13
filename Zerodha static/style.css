@@ -44,12 +44,14 @@ nav a:hover{
 .first h2{
     font-weight: 500;
     font-size: 2em;
+    color: rgb(66, 66, 66);
 
 }
 .first h4{
     font-weight: 400;
     font-size: 1.2em;
-}
+    color: rgb(66, 66, 66);
+} 
 .first img{
     height: 20em;
 }
@@ -60,11 +62,54 @@ nav a:hover{
     border: none;
     width: 200px;
     height: 45px;
-    font-weight: 500;
-    font-size: 1.5em;
+    font-weight: bold;
+    font-size: 1.2em;
     border-radius: 4px;
 }
 .first button:hover{
     background-color: #222222;
     
+}
+.trust{
+    display: flex;
+    color:rgb(66, 66, 66);
+   
+}
+.lines h3{
+    padding-bottom: 1em;
+     font-size: 1.4rem;
+    font-weight: 500;
+    font-weight: bold;
+}
+.lines{display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 10em;
+    gap: 2em;
+}
+.lines h4{
+    padding-bottom: 0.9em;
+    color: rgb(66, 66, 66);
+    font-weight: 500;
+    font-size: 1.2rem;
+
+}
+.lines p{
+    color: rgb(102, 102, 102);
+    font-size: 1rem;
+}
+.lines>:first-child{
+        padding-top: 4em;
+}
+.image{
+    display: flex;
+    flex-direction: row;
+}
+.img{
+    width: 50vw;
+    min-height: auto;
+   
+}
+.image .img{
+     order: 2;
 }
