@@ -1,115 +1,142 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'); */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Elms Sans", sans-serif;
-    font-style: normal;
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Elms Sans", sans-serif;
+  /* font-size: 16px; */
 }
-body{
-    background-color: #FFFFFF;
+body {
+  background-color: #ffffff;
 }
-nav{
-    height: 4.5em;
-    position:sticky;
+nav {
+  height: 4.5em;
+  position: sticky;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid rgb(224, 219, 219);
+}
+.logo img {
+  height: 1em;
+}
+nav a {
+  padding-left: 3em;
+  text-decoration: none;
+  color: grey;
+  font-weight: 400;
+  font-size: 1em;
+}
+nav a:hover {
+  color: rgb(56, 126, 209);
+}
+.first {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  gap: 20px;
+}
+.first h2 {
+  font-weight: 500;
+  font-size: 2em;
+  color: rgb(66, 66, 66);
+}
+.first h4 {
+  font-weight: 400;
+  font-size: 1.2em;
+  color: rgb(66, 66, 66);
+}
+.first img {
+  height: 20em;
+}
+.first button {
+  background-color: #387ed1;
+  cursor: pointer;
+  color: white;
+  border: none;
+  width: 200px;
+  height: 45px;
+  font-weight: bold;
+  font-size: 1.2em;
+  border-radius: 4px;
+}
+.first button:hover {
+  background-color: #222222;
+}
+.trust {
+  display: flex;
+  color: rgb(66, 66, 66);
+}
+.lines h3 {
+  padding-bottom: 1em;
+  font-size: 1.8rem;
+  font-weight: 500;
+  font-weight: bold;
+}
+.lines {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-left: 10em;
+  gap: 2em;
+}
+.lines h4 {
+  padding-bottom: 1.2rem;
+  color: rgb(66, 66, 66);
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+.lines p {
+  color: rgb(102, 102, 102);
+  font-size: 1.4rem;
+}
+.lines > :first-child {
+  padding-top: 4em;
+}
+.image {
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.link {
+  text-align: center;
+}
+.link a {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding-left: 2rem;
+  font-weight: 700;
+  color: rgb(123, 123, 240);
+}
+.link a:hover {
+  color: rgb(66, 66, 66);
+}
+.img {
+  padding-left: 6rem;
+  margin-top: 6rem;
+}
+.img img {
+  width: 45vw;
+  height: auto;
+}
+.end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.end img {
+  width: 100%;
+  height: auto;
+}
+.thirdSec{
     display: flex;
-    justify-content: space-around;
     align-items: center;
-     border-bottom: 1px solid rgb(224, 219, 219);
-}
-.logo img{
-    height: 1em;
-    
-}
-nav a{
-    padding-left: 3em;
-    text-decoration: none;
-    color: grey;
-    font-weight: 400;
-    font-size: 1em;
-   
-}
-nav a:hover{
-    color: rgb(56, 126, 209);;
-}
-.first{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-    gap: 20px;
-}
-.first h2{
-    font-weight: 500;
-    font-size: 2em;
-    color: rgb(66, 66, 66);
 
 }
-.first h4{
-    font-weight: 400;
-    font-size: 1.2em;
-    color: rgb(66, 66, 66);
-} 
-.first img{
-    height: 20em;
-}
-.first button{
-    background-color: #387ed1;
-    cursor: pointer;
-    color: white;
-    border: none;
-    width: 200px;
-    height: 45px;
-    font-weight: bold;
-    font-size: 1.2em;
-    border-radius: 4px;
-}
-.first button:hover{
-    background-color: #222222;
-    
-}
-.trust{
+.rupee{
     display: flex;
-    color:rgb(66, 66, 66);
-   
-}
-.lines h3{
-    padding-bottom: 1em;
-     font-size: 1.4rem;
-    font-weight: 500;
-    font-weight: bold;
-}
-.lines{display: flex;
-    flex-direction: column;
-    width: 30%;
-    margin-left: 10em;
-    gap: 2em;
-}
-.lines h4{
-    padding-bottom: 0.9em;
-    color: rgb(66, 66, 66);
-    font-weight: 500;
-    font-size: 1.2rem;
-
-}
-.lines p{
-    color: rgb(102, 102, 102);
-    font-size: 1rem;
-}
-.lines>:first-child{
-        padding-top: 4em;
-}
-.image{
-    display: flex;
-    flex-direction: row;
-}
-.img{
-    width: 50vw;
-    min-height: auto;
-   
-}
-.image .img{
-     order: 2;
+    align-items: center;
 }
