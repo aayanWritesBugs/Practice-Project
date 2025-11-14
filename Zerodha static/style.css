@@ -8,11 +8,14 @@
 }
 body {
   background-color: #ffffff;
+  position: relative;
 }
 nav {
   height: 4.5em;
   position: sticky;
+  top: 0px;
   display: flex;
+  background-color: #222222;
   justify-content: space-around;
   align-items: center;
   border-bottom: 1px solid rgb(224, 219, 219);
@@ -131,12 +134,104 @@ nav a:hover {
   width: 100%;
   height: auto;
 }
-.thirdSec{
-    display: flex;
-    align-items: center;
+.pricing-section{
+  display: flex;
+  flex-basis: auto;
+  align-items: center;
+  justify-content: center;
+}
+.pricing-items{
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 7rem;
 
 }
-.rupee{
-    display: flex;
-    align-items: center;
+.item{
+  display: flex;
+  align-items: center;
+  flex: 1;
+  /* padding-right: 10rem; */
+}
+.item>img{
+  width: 60%;
+  height: auto;
+}
+.item>p{
+  padding-right: 4em;
+  font-size: 10px;
+}
+.pricing-text{
+  padding-left: 12rem;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: start;
+  width: 50%;
+}
+.pricing-text>h2{
+  padding-bottom: 2rem;
+}
+.pricing-text>p{
+  padding-bottom: 1.5rem;
+}
+.pricing-text>a{
+  text-decoration: none;
+    color: rgb(123, 123, 240);
+    font-weight: bold;
+}
+.pricing-text>a:hover{
+color: grey;
+cursor: pointer;
+}
+.varsity{
+  display: flex;
+  justify-content:space-around;
+  align-items: center ;
+  flex: 1;
+
+}
+.varsity>.image>img{
+  width: 30vw;
+}
+.varsityText{
+  padding: 2rem;
+}
+.link{
+  padding-right: 2rem;
+}
+.link>a{
+  text-decoration: none;
+}
+.varsityText>p{
+padding-bottom: 2rem;
+padding-top: 2rem;
+}
+.openaccount{
+text-align: center;
+
+}
+.openaccount>h2{
+  padding-bottom: 2rem;
+}
+.openaccount button {
+  margin: 2rem;
+  background-color: #387ed1;
+  cursor: pointer;
+  color: white;
+  border: none;
+  width: 200px;
+  height: 45px;
+  font-weight: bold;
+  font-size: 1.2em;
+  border-radius: 4px;
+}
+.openaccount button:hover {
+  background-color: #222222;
+  
+}
+footer{
+  margin-top: 4rem;
+  background-color: #020202;
+  color: rgb(66, 66, 66);
 }
