@@ -1,237 +1,52 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'); */
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Elms Sans", sans-serif;
-  /* font-size: 16px; */
 }
-body {
-  background-color: #ffffff;
-  position: relative;
-}
-nav {
-  height: 4.5em;
-  position: sticky;
-  top: 0px;
+nav{
   display: flex;
-  background-color: #222222;
-  justify-content: space-around;
   align-items: center;
-  border-bottom: 1px solid rgb(224, 219, 219);
-}
-.logo img {
-  height: 1em;
-}
-nav a {
-  padding-left: 3em;
-  text-decoration: none;
-  color: grey;
-  font-weight: 400;
-  font-size: 1em;
-}
-nav a:hover {
-  color: rgb(56, 126, 209);
-}
-.first {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 40px;
-  gap: 20px;
-}
-.first h2 {
-  font-weight: 500;
-  font-size: 2em;
-  color: rgb(66, 66, 66);
-}
-.first h4 {
-  font-weight: 400;
-  font-size: 1.2em;
-  color: rgb(66, 66, 66);
-}
-.first img {
-  height: 20em;
-}
-.first button {
-  background-color: #387ed1;
-  cursor: pointer;
-  color: white;
-  border: none;
-  width: 200px;
-  height: 45px;
-  font-weight: bold;
-  font-size: 1.2em;
-  border-radius: 4px;
-}
-.first button:hover {
-  background-color: #222222;
-}
-.trust {
-  display: flex;
-  color: rgb(66, 66, 66);
-}
-.lines h3 {
-  padding-bottom: 1em;
-  font-size: 1.8rem;
-  font-weight: 500;
-  font-weight: bold;
-}
-.lines {
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-  margin-left: 10em;
-  gap: 2em;
-}
-.lines h4 {
-  padding-bottom: 1.2rem;
-  color: rgb(66, 66, 66);
-  font-weight: 500;
-  font-size: 1.6rem;
-}
-.lines p {
-  color: rgb(102, 102, 102);
-  font-size: 1.4rem;
-}
-.lines > :first-child {
-  padding-top: 4em;
-}
-.image {
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-.link {
-  text-align: center;
-}
-.link a {
-  text-decoration: none;
-  cursor: pointer;
-  font-size: 1.2rem;
-  padding-left: 2rem;
-  font-weight: 700;
-  color: rgb(123, 123, 240);
-}
-.link a:hover {
-  color: rgb(66, 66, 66);
-}
-.img {
-  padding-left: 6rem;
-  margin-top: 6rem;
-}
-.img img {
-  width: 45vw;
-  height: auto;
-}
-.end {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.end img {
+  justify-content: space-between;
+  padding: 30px 100px;
   width: 100%;
-  height: auto;
 }
-.pricing-section{
-  display: flex;
-  flex-basis: auto;
-  align-items: center;
-  justify-content: center;
-}
-.pricing-items{
-  width: 60%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-right: 7rem;
-
-}
-.item{
-  display: flex;
-  align-items: center;
-  flex: 1;
-  /* padding-right: 10rem; */
-}
-.item>img{
-  width: 60%;
-  height: auto;
-}
-.item>p{
-  padding-right: 4em;
-  font-size: 10px;
-}
-.pricing-text{
-  padding-left: 12rem;
-  font-weight: 400;
-  font-size: 18px;
-  text-align: start;
-  width: 50%;
-}
-.pricing-text>h2{
-  padding-bottom: 2rem;
-}
-.pricing-text>p{
-  padding-bottom: 1.5rem;
-}
-.pricing-text>a{
-  text-decoration: none;
-    color: rgb(123, 123, 240);
-    font-weight: bold;
-}
-.pricing-text>a:hover{
-color: grey;
-cursor: pointer;
-}
-.varsity{
-  display: flex;
-  justify-content:space-around;
-  align-items: center ;
-  flex: 1;
-
-}
-.varsity>.image>img{
-  width: 30vw;
-}
-.varsityText{
-  padding: 2rem;
-}
-.link{
-  padding-right: 2rem;
-}
-.link>a{
-  text-decoration: none;
-}
-.varsityText>p{
-padding-bottom: 2rem;
-padding-top: 2rem;
-}
-.openaccount{
-text-align: center;
-
-}
-.openaccount>h2{
-  padding-bottom: 2rem;
-}
-.openaccount button {
-  margin: 2rem;
-  background-color: #387ed1;
-  cursor: pointer;
-  color: white;
-  border: none;
-  width: 200px;
-  height: 45px;
-  font-weight: bold;
-  font-size: 1.2em;
-  border-radius: 4px;
-}
-.openaccount button:hover {
-  background-color: #222222;
+.nav1 img{
+  height: 18px;
   
 }
-footer{
-  margin-top: 4rem;
-  background-color: #020202;
-  color: rgb(66, 66, 66);
+.nav2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+@media (max-width:960px) {
+  .nav2 a{
+    display: none;
+  }
+  nav{
+    padding: 30px 20px;
+  }
+}
+.nav2 a{
+  text-decoration: none;
+  color: #666666;
+}
+.nav2 i{
+  font-size: 23px;
+}
+.nav2 a:hover{
+  cursor: pointer;
+  color: #387ed1;
+}
+.hero{
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 65px;
+}
+.hero img{
+  width: 50%;
+  min-width: 350px;
 }
